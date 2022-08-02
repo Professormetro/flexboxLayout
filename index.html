@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <linl rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section class="gallery">
         <h2 class="title">Gallery</h2>
         <div class="gallery-list">
-            <a href="img/beetle.jpg" class="galery-item">
+            <a href="img/beetle.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/beetle.jpg" alt="alt">
             </a>
-            <a href="img/liberty.jpg" class="galery-item">
+            <a href="img/liberty.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/liberty.jpg" alt="alt">
             </a>
-            <a href="img/lighthouse.jpg" class="galery-item">
+            <a href="img/lighthouse.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/lighthouse.jpg" alt="alt">
             </a>
-            <a href="img/minimalismo.jpg" class="galery-item">
+            <a href="img/minimalismo.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/minimalismo.jpg" alt="alt">
             </a>
-            <a href="img/salad.jpg" class="galery-item">
+            <a href="img/salad.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/salad.jpg" alt="alt">
             </a>
-            <a href="img/shutterbug.jpg" class="galery-item">
+            <a href="img/shutterbug.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/shutterbug.jpg" alt="alt">
             </a>
-            <a href="img/skaterboy.jpg" class="galery-item">
+            <a href="img/skaterboy.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/skaterboy.jpg" alt="alt">
             </a>
-            <a href="img/woodcraft.jpg" class="galery-item">
+            <a href="img/woodcraft.jpg" class="gallery-item">
                 <div class="gallery-item-hover">Look</div>
                 <img src="img/woodcraft.jpg" alt="alt">
             </a>
@@ -49,17 +52,24 @@
 
 
         </div>
-
-
-
-    
     </section>
 
 
 
 
 
-    </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image", 
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
 </body>
+
 </html>
